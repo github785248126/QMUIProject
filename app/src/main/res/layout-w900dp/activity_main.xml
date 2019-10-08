@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_radius">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lunar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/date"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lunarYear"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/lunar"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/lunarYear"
+            android:layout_margin="5dp"
+            android:background="@color/color_B0B0B0" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_margin="50dp"
+            android:layout_below="@+id/lunarYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/avoid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/suit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_below="@+id/avoid"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
