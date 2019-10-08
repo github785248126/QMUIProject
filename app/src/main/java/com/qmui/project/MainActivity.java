@@ -3,7 +3,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-
 import com.google.gson.Gson;
 import com.qmui.project.bean.DayBean;
 import com.qmui.project.constant.Constants;
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //  两套activity_main资源文件，当屏幕宽度大于900dp，系统会去layout-w900dp包下获取资源文件
         setContentView(R.layout.activity_main);
         initView();
         initData();

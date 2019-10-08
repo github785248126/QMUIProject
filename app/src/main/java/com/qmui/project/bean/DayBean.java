@@ -1,7 +1,6 @@
 package com.qmui.project.bean;
 
 import com.google.gson.annotations.SerializedName;
-
 /**
  * 创建日期：2019/10/8
  * 创建人：崔斌浩
@@ -9,7 +8,6 @@ import com.google.gson.annotations.SerializedName;
  * 说明：
  */
 public class DayBean {
-
     /**
      * reason : Success
      * result : {"data":{"avoid":"入殓.安葬.开市.交易.","animalsYear":"猪","weekday":"星期二","suit":"祭祀.诸事不宜.","lunarYear":"己亥年","lunar":"九月初三","year-month":"2019-10","date":"2019-10-1","desc":"10月1日至10月7日放假，9月29日（星期日）、10月12日（星期六）上班。","holiday":"国庆节"}}
@@ -72,7 +70,6 @@ public class DayBean {
              * desc : 10月1日至10月7日放假，9月29日（星期日）、10月12日（星期六）上班。
              * holiday : 国庆节
              */
-
             private String avoid;
             private String animalsYear;
             private String weekday;
